@@ -1,4 +1,4 @@
-export const GLHelp = {
+const GLHelp = {
   /**
    * Retrieves a WebGL2 rendering context from the specified canvas element.
    * @param {string} canvasID - The ID of the HTML canvas element.
@@ -197,3 +197,4 @@ export const GLHelp = {
     }
   }
 };
+export default GLHelp;
