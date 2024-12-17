@@ -123,9 +123,9 @@ const glHelp = {
     const processedSource = source
       .split('\n')
       .map(line => {
-        if (line.trim().startsWith("fnmain")) {
+        if (line.trim().startsWith("main")) {
           return "void main() {\n" + line.trim().slice(6) + "\n}";
-        } else if (line.trim() === "main") {
+        } else if (line.trim() === "m") {
           return "void main() {}";
         }
         return line;
