@@ -1,7 +1,7 @@
 /**
  * WebGL utility functions
  */
-const WebGLUtils = {
+const glHelp = {
 
   /**
    * Retrieves a WebGL2 rendering context from the specified canvas element.
