@@ -1,17 +1,11 @@
-window.onload = () => {
-  const canvas = document.getElementById('myCanvas');
-  const ctx = canvas.getContext('2d');
+// Get the canvas and its context
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
 
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+// Set a constant size (not responsive)
+canvas.width = 800;
+canvas.height = 600;
 
-  ctx.fillStyle = 'blue';
-  ctx.fillRect(50, 50, 200, 100);
-
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    ctx.fillStyle = 'blue';
-    ctx.fillRect(50, 50, 200, 100);
-  });
-};
+// Fill the canvas with a blue rectangle
+ctx.fillStyle = 'blue';
+ctx.fillRect(50, 50, 200, 100);
