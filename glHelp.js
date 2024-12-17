@@ -183,4 +183,4 @@ const glHelp = {
 };
 
 // Export all functions together
-export default WebGLUtils;
+export default glHelp;
